@@ -20,7 +20,9 @@ clickAction(story) {
       <div>
         <h1>The Amazing James REDUX</h1>
         <Maze clickAction={this.clickAction}/>
-        <p>{this.state.story}</p>
+        <div className="col-md-5">
+        <h2>{this.state.story}</h2>
+        </div>
       </div>
     )
   }

@@ -1,3 +1,32 @@
 body {
   text-align: center;
+  color: white;
+  background-image: url("./public/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: darkblue;
+}
+
+h1 {
+  font-size: 50pt;
+  color: black;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+.col-md-5{
+  margin-left: 380px;
+  background-color: lightgreen;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.col-md-1 {
+
+  margin: 5px;
+margin-left: 100px;
+display: flex;
+text-align: center;
 }

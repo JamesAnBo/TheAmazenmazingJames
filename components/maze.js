@@ -23,6 +23,7 @@ constructor (props){
           this.state.images.map(image => <Cell key={image.src} src={image.src} story={image.story} clickAction={this.props.clickAction}/>)
         }
       </div>
+
     )
   }
 }
