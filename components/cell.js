@@ -6,8 +6,10 @@ export default class Cell extends React.Component {
   render () {
     return (
       <div>
-        <h1>This is a cell!</h1>
+        <h1>hello world</h1>
       </div>
+
+
     )
   }
 }

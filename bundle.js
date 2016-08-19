@@ -155,7 +155,7 @@ var Cell = function (_React$Component) {
         _react2.default.createElement(
           'h1',
           null,
-          'This is a cell!'
+          'hello world'
         )
       );
     }
@@ -216,14 +216,43 @@ var Maze = function (_React$Component) {
           'This is the Maze!'
         ),
         _react2.default.createElement(_cell2.default, null),
-        _react2.default.createElement(_cell2.default, null),
-        _react2.default.createElement(_cell2.default, null)
+        _react2.default.createElement(
+          _cell2.default,
+          null,
+          ' ',
+          _react2.default.createElement('img', { src: './public/minotaur.png', height: '100', width: '100' }),
+          ' '
+        ),
+        _react2.default.createElement(
+          _cell2.default,
+          null,
+          ' ',
+          _react2.default.createElement('img', { src: './public/Mountain.png', height: '100', width: '100' }),
+          ' '
+        ),
+        _react2.default.createElement(
+          _cell2.default,
+          null,
+          ' ',
+          _react2.default.createElement('img', { src: './public/Valley.png', height: '100', width: '100' }),
+          ' '
+        ),
+        _react2.default.createElement(
+          _cell2.default,
+          null,
+          ' ',
+          _react2.default.createElement('img', { src: './public/Village.png', height: '100', width: '100' }),
+          ' '
+        )
       );
     }
   }]);
 
   return Maze;
 }(_react2.default.Component);
+
+//<Cell> <img src="./public/James.png" height="100" width="100"/> </Cell>
+
 
 exports.default = Maze;
 
