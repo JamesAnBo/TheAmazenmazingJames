@@ -1,6 +1,5 @@
 import React from 'react'
 import Maze from './maze'
-import Picture from './picture'
 
 export default class App extends React.Component {
   render () {
@@ -8,7 +7,6 @@ export default class App extends React.Component {
       <div>
         <h1>REACT QUICKLY</h1>
         <Maze />
-        <Picture />
       </div>
     )
   }

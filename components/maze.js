@@ -1,5 +1,6 @@
 import React from 'react'
 import Cell from './cell'
+import App from './App'
 
 export default class Maze extends React.Component {
   render () {
