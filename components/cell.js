@@ -8,17 +8,16 @@ export default class Cell extends React.Component {
     this.handleClick=this.handleClick.bind(this)
   }
 
-handleClick(){
-  this.props.clickAction(this.props.story)
-}
+  handleClick(){
+    this.props.clickAction(this.props.story)
+  }
 
   render () {
     return (
       <div>
-        <h1 onClick={this.handleClick}>hello world</h1>
+        <img src={this.props.src} width="100" height="100" />
       </div>
-
-
     )
+
   }
 }
