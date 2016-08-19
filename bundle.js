@@ -152,11 +152,7 @@ var Cell = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(
-          'h1',
-          null,
-          'hello world'
-        )
+        _react2.default.createElement('img', { src: this.props.src, width: '100', height: '100' })
       );
     }
   }]);
@@ -198,10 +194,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Maze = function (_React$Component) {
   _inherits(Maze, _React$Component);
 
-  function Maze() {
+  function Maze(props) {
     _classCallCheck(this, Maze);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Maze).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Maze).call(this, props));
+
+    _this.state = { images: [{ src: "./public/Village.png" }, { src: "./public/Arrow.jpg" }, { src: "./public/Mountain.png" }, { src: "./public/Valley.png" }, { src: "./public/minotaur.png" }] };
+    return _this;
   }
 
   _createClass(Maze, [{
@@ -210,40 +209,9 @@ var Maze = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(
-          'h1',
-          null,
-          'This is the Maze!'
-        ),
-        _react2.default.createElement(_cell2.default, null),
-        _react2.default.createElement(
-          _cell2.default,
-          null,
-          ' ',
-          _react2.default.createElement('img', { src: './public/minotaur.png', height: '100', width: '100' }),
-          ' '
-        ),
-        _react2.default.createElement(
-          _cell2.default,
-          null,
-          ' ',
-          _react2.default.createElement('img', { src: './public/Mountain.png', height: '100', width: '100' }),
-          ' '
-        ),
-        _react2.default.createElement(
-          _cell2.default,
-          null,
-          ' ',
-          _react2.default.createElement('img', { src: './public/Valley.png', height: '100', width: '100' }),
-          ' '
-        ),
-        _react2.default.createElement(
-          _cell2.default,
-          null,
-          ' ',
-          _react2.default.createElement('img', { src: './public/Village.png', height: '100', width: '100' }),
-          ' '
-        )
+        this.state.images.map(function (image) {
+          return _react2.default.createElement(_cell2.default, { key: image.src, src: image.src });
+        })
       );
     }
   }]);

@@ -3,15 +3,24 @@ import Cell from './cell'
 import App from './App'
 
 export default class Maze extends React.Component {
+constructor (props){
+  super(props)
+  this.state = {images:[
+  {src:"./public/Village.png"},
+  {src:"./public/Arrow.jpg"},
+  {src:"./public/Mountain.png"},
+  {src:"./public/Valley.png"},
+  {src:"./public/minotaur.png"}
+  ] }
+}
+
+
   render () {
     return (
       <div>
-        <h1>This is the Maze!</h1>
-        <Cell/> 
-        <Cell> <img src="./public/minotaur.png" height="100" width="100"/> </Cell>
-        <Cell> <img src="./public/Mountain.png" height="100" width="100"/> </Cell>
-        <Cell> <img src="./public/Valley.png" height="100" width="100"/> </Cell>
-        <Cell> <img src="./public/Village.png" height="100" width="100"/> </Cell>
+        {
+          this.state.images.map(image => <Cell key={image.src} src={image.src}/>)
+        }
       </div>
     )
   }
