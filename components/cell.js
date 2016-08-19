@@ -3,13 +3,13 @@ import App from './App'
 import Maze from './maze'
 
 export default class Cell extends React.Component {
-
-
-
   render () {
     return (
       <div>
-        <img src={this.props.src} width="100" height="100" />
+        <div className="col-md-1">
+
+        <img src={this.props.src} width="200" height="200" />
+        </div>
       </div>
 
 

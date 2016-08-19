@@ -17,11 +17,12 @@ constructor (props){
 
   render () {
     return (
-      <div>
-        {
-          this.state.images.map(image => <Cell key={image.src} src={image.src}/>)
-        }
+      <div className="background">
+            {
+              this.state.images.map(image => <Cell key={image.src} src={image.src}/>)
+            }
       </div>
+
     )
   }
 }

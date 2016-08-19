@@ -1,3 +1,17 @@
 body {
   text-align: center;
+  color: white;
+  background-image: url("./public/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: darkblue;
+}
+
+
+.col-md-1 {
+
+  margin: 5px;
+margin-left: 100px;
+display: flex;
+text-align: center;
 }
