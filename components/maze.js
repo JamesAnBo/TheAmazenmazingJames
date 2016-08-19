@@ -18,17 +18,10 @@ constructor (props){
 
   render () {
     return (
-<<<<<<< HEAD
-      <div className="background">
-            {
-              this.state.images.map(image => <Cell key={image.src} src={image.src}/>)
-            }
-=======
       <div>
         {
           this.state.images.map(image => <Cell key={image.src} src={image.src} story={image.story} clickAction={this.props.clickAction}/>)
         }
->>>>>>> a4707cf38821a657dc95301dc4351dc4442f73be
       </div>
 
     )
